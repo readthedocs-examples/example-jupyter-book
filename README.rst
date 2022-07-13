@@ -7,14 +7,14 @@ Example: Jupyter Book for Read the Docs
 
 .. This README.rst should work on Github and is also included in the Sphinx documentation project in docs/ - therefore, README.rst uses absolute links for most things so it renders properly on GitHub
 
-This example shows a Jupyter Book project with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code. If you are using Read the Docs for the first time, have a look at the official `Read the Docs Tutorial <https://docs.readthedocs.io/en/stable/tutorial/index.html>`__.
+This example shows a Jupyter Book project with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code. If you are using Read the Docs for the first time, have a look at the official `Read the Docs Tutorial <https://docs.readthedocs.io/en/stable/tutorial/index.html>`__. If you are using Jupyter Book for the first time, have a look at the `official Jupyter Book documentation <https://jupyterbook.org/en/stable/>`_.
 
 📚 `docs/ <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/>`_
     A basic Jupyter Book project lives in ``docs/``. All the ``*.md`` make up sections in the documentation.
 ⚙️ `.readthedocs.yaml <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/.readthedocs.yaml>`_
     Read the Docs Build configuration is stored in ``.readthedocs.yaml``.
 ⚙️ `docs/config.yml <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/conf.py>`_
-    This is the configuration for Jupyter Book which is used to generate a Sphinx-configuration on-the-fly. However, the Sphinx ``conf.py`` file is NOT managed in a git repository, as it is managed by Jupyter Book!
+    This is the `configuration for Jupyter Book <https://jupyterbook.org/en/stable/customize/config.html>`_ which is used to generate a Sphinx-configuration on-the-fly. However, the Sphinx ``conf.py`` file is NOT managed in a git repository, as it is managed by Jupyter Book!
 📍 `docs/requirements.txt <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/requirements.txt>`_ and `docs/requirements.in <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/requirements.in>`_
     Python dependencies are `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`_ (uses `pip-tools <https://pip-tools.readthedocs.io/en/latest/>`_). Make sure to add your Python dependencies to ``requirements.txt`` or if you choose [pip-tools](https://pip-tools.readthedocs.io/en/latest/), edit ``docs/requirements.in`` and remember to run ``pip-compile docs/requirements.in``.
 🔢 Git tags versioning
