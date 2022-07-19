@@ -13,12 +13,12 @@ This example shows a Jupyter Book project with Read the Docs. You're encouraged 
     A basic Jupyter Book project lives in ``docs/``. All the ``*.md`` make up sections in the documentation.
 ⚙️ `.readthedocs.yaml <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/.readthedocs.yaml>`_
     Read the Docs Build configuration is stored in ``.readthedocs.yaml``.
-⚙️ `docs/config.yml <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/conf.py>`_
+⚙️ `docs/_config.yml <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/_config.yml>`_
     This is the `configuration for Jupyter Book <https://jupyterbook.org/en/stable/customize/config.html>`_ which is used to generate a Sphinx-configuration on-the-fly. However, the Sphinx ``conf.py`` file is NOT managed in a git repository, as it is managed by Jupyter Book!
-📍 `docs/requirements.txt <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/requirements.txt>`_ and `docs/requirements.in <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/requirements.in>`_
-    Python dependencies are `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`_ (uses `pip-tools <https://pip-tools.readthedocs.io/en/latest/>`_). Make sure to add your Python dependencies to ``requirements.txt`` or if you choose [pip-tools](https://pip-tools.readthedocs.io/en/latest/), edit ``docs/requirements.in`` and remember to run ``pip-compile docs/requirements.in``.
+📍 `docs/requirements.txt <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/requirements.txt>`_
+    These dependencies need to be installed for Jupyter Book to work. If you are familiar with Python, you might notice that the dependencies are *not* `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`. This is the default method for Jupyter Book - on one hand it gives you the latest version each time Read the Docs builds your documentation; but on the other hand, your build can fail in the future if an incompatible version of ``jupyter-book`` is released.
 🔢 Git tags versioning
-    We use a basic versioning mechanism by adding a git tag for every release of the example project. All releases and their version numbers are visible on `example-jupyter-book.readthedocs.io <https://example-jupyter-book.readthedocs.io/en/latest/>`__.
+    We `version the docs <https://docs.readthedocs.io/en/stable/versions.html>`_ by adding a git tag for every release of the example project. All releases and their version numbers are visible on `example-jupyter-book.readthedocs.io <https://example-jupyter-book.readthedocs.io/en/latest/>`__.
 📜 `README.rst <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/README.rst>`_
     Contents of this ``README.rst`` are visible on Github and included on `the documentation index page <https://example-jupyter-book.readthedocs.io/en/latest/>`_ (Don't Repeat Yourself).
 ⁉️ Questions / comments
@@ -63,8 +63,8 @@ If you are copying this code in order to get started with your documentation, yo
 #. *finally*, register your project on Read the Docs, see `Importing Your Documentation <https://docs.readthedocs.io/en/stable/intro/import-guide.html>`_.
 
 
-Read the Docs tutorial
+Read the Docs Tutorial
 ----------------------
 
-To get started with Read the Docs, you may also refer to the `Read the Docs tutorial <https://docs.readthedocs.io/en/stable/tutorial/>`__.
+To get started with Read the Docs, you may also refer to the `Read the Docs Tutorial <https://docs.readthedocs.io/en/stable/tutorial/>`__.
 It provides a full walk-through of building an example project similar to the one in this repository.
