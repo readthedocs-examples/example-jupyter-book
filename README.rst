@@ -5,12 +5,12 @@ Example: Jupyter Book for Read the Docs
     :target: https://example-jupyter-book.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-.. This README.rst should work on Github and is also included in the Sphinx documentation project in docs/ - therefore, README.rst uses absolute links for most things so it renders properly on GitHub
+.. This README.rst should work on GitHub and is also included in the Sphinx documentation project in docs/ - therefore, README.rst uses absolute links for most things so it renders properly on GitHub
 
 This example shows a Jupyter Book project with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code. If you are using Read the Docs for the first time, have a look at the official `Read the Docs Tutorial <https://docs.readthedocs.io/en/stable/tutorial/index.html>`__. If you are using Jupyter Book for the first time, have a look at the `official Jupyter Book documentation <https://jupyterbook.org/en/stable/>`_.
 
 📚 `docs/ <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/>`_
-    A basic Jupyter Book project lives in ``docs/``. All the ``*.md`` make up sections in the documentation.
+    A basic Jupyter Book project lives in ``docs/``. All the ``*.md`` make up sections in the documentation, ``intro.md`` is the starting page and includes this ``README.rst``.
 ⚙️ `.readthedocs.yaml <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/.readthedocs.yaml>`_
     Read the Docs Build configuration is stored in ``.readthedocs.yaml``.
 ⚙️ `docs/_config.yml <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/_config.yml>`_
@@ -20,9 +20,9 @@ This example shows a Jupyter Book project with Read the Docs. You're encouraged 
 🔢 Git tags versioning
     We `version the docs <https://docs.readthedocs.io/en/stable/versions.html>`_ by adding a git tag for every release of the example project. All releases and their version numbers are visible on `example-jupyter-book.readthedocs.io <https://example-jupyter-book.readthedocs.io/en/latest/>`__.
 📜 `README.rst <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/README.rst>`_
-    Contents of this ``README.rst`` are visible on Github and included on `the documentation index page <https://example-jupyter-book.readthedocs.io/en/latest/>`_ (Don't Repeat Yourself).
+    Contents of this ``README.rst`` are visible on GitHub and included on `the documentation index page <https://example-jupyter-book.readthedocs.io/en/latest/>`_ (Don't Repeat Yourself).
 ⁉️ Questions / comments
-    If you have questions related to this example, feel free to can ask them as a Github issue `here <https://github.com/readthedocs-examples/example-jupyter-book/issues>`_.
+    If you have questions related to this example, feel free to can ask them as a GitHub issue `here <https://github.com/readthedocs-examples/example-jupyter-book/issues>`_.
 
 
 Example Project usage
@@ -51,8 +51,10 @@ If you are new to Read the Docs, you may want to refer to the `Read the Docs Use
 
 If you are copying this code in order to get started with your documentation, you need to:
 
-#. use your existing project repository or create a new repository on Github, GitLab, Bitbucket or another host supported by Read the Docs
+#. use your existing project repository or create a new repository on GitHub, GitLab, Bitbucket or another host supported by Read the Docs
 #. copy ``.readthedocs.yaml`` and the ``docs/`` folder into your project.
+#. if you want to have a README on GitHub, create a ``README.rst`` which will be included in ``index.md``.
+#. if you *do not* want your README from GitHub included in the docs, edit `ìndex.md`` and remove the ``eval-rst`` block that includes it.
 #. if you don't already have a ``.gitignore``, use the one from the project file -- otherwise add these lines::
 
     /docs/conf.py
