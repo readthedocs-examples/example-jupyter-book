@@ -17,10 +17,14 @@ This example shows a Jupyter Book project with Read the Docs. You're encouraged 
     This is the `configuration for Jupyter Book <https://jupyterbook.org/en/stable/customize/config.html>`_ which is used to generate a Sphinx-configuration on-the-fly. However, the Sphinx ``conf.py`` file is NOT managed in a git repository, as it is managed by Jupyter Book!
 📍 `docs/requirements.txt <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/docs/requirements.txt>`_
     These dependencies need to be installed for Jupyter Book to work. If you are familiar with Python, you might notice that the dependencies are *not* `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`. This is the default method for Jupyter Book - on one hand it gives you the latest version each time Read the Docs builds your documentation; but on the other hand, your build can fail in the future if an incompatible version of ``jupyter-book`` is released.
-🔢 Git tags versioning
-    We `version the docs <https://docs.readthedocs.io/en/stable/versions.html>`_ by adding a git tag for every release of the example project. All releases and their version numbers are visible on `example-jupyter-book.readthedocs.io <https://example-jupyter-book.readthedocs.io/en/latest/>`__.
-📜 `README.rst <https://github.com/readthedocs-examples/example-jupyter-book/blob/main/README.rst>`_
-    Contents of this ``README.rst`` are visible on GitHub and included on `the documentation index page <https://example-jupyter-book.readthedocs.io/en/latest/>`_ (Don't Repeat Yourself).
+💡 Extension: `Intersphinx <https://docs.readthedocs.io/en/stable/guides/intersphinx.html>`_
+    Using this extension, we refer directly to sections in other projects that use Sphinx.
+💡 Extension: `sphinx-hoverxref <https://sphinx-hoverxref.readthedocs.io/>`__
+    A floating window (also known as a "tooltip" or "modal dialogue") appears when the mouse curser hovers a cross references to another section of the documentation or another documentation project referenced with Intersphinx.
+🔢 Simplified versioning
+    In this example, we maintain a single version of the rendered documentation by automatically building and rendering everything that is added to the ``main`` branch. This is different from many software projects where several `versions of the docs <https://docs.readthedocs.io/en/stable/versions.html>`_ may be published for each new release.
+🔢 Pull Request builds
+    Every time a change in a Pull Request on the GitHub repository happens, users can open `an automatically built Pull Request preview <https://docs.readthedocs.io/en/stable/pull-requests.html>`__.
 ⁉️ Questions / comments
     If you have questions related to this example, feel free to can ask them as a GitHub issue `here <https://github.com/readthedocs-examples/example-jupyter-book/issues>`_.
 
