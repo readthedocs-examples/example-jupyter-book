@@ -3,7 +3,8 @@
 # Jupyter Book on Read the Docs
 
 This example shows a Jupyter Book project built and published on Read the Docs.
-You're encouraged to view it to get inspiration and copy & paste from the files in [the source code repository][github], where you will also find the relevant configuration for building Jupyter Book projects on Read the Docs.
+You're encouraged to use it to get inspiration and copy & paste from the files in [the source code repository][github]. In the source repository you will also find the relevant configuration and instructions for building Jupyter Book projects on Read the Docs.
+
 If you are using Read the Docs for the first time, have a look at the official [Read the Docs Tutorial][tutorial].
 If you are using Jupyter Book for the first time, have a look at the [official Jupyter Book documentation][jb-docs].
 
@@ -18,28 +19,27 @@ Furthermore, if you open Pull Requests, you can preview the result as rendered b
 
 ## What is in this example?
 
-Jupyter Book has a number of built-in features, which you can see examples of here:
+Jupyter Book has a number of built-in features.
+This is a small example book to give you a feel for how book content is structured.
+It shows off a few of the major file types, as well as some sample content.
+It does not go in-depth into any particular topic - check out [the Jupyter Book documentation][jb-docs] for more information.
 
 * [Examples of Markdown](/markdown)
 * [Rendering a notebook Jupyter Notebook](/notebooks)
 * [A notebook written in MyST Markdown](/markdown-notebooks)
 
-We have also added some popular features for Jupyter Book that really you shouldn't miss when building your own project:
+We have also added some popular features for Jupyter Book that really you shouldn't miss when building your own project with Jupyter Book and Read the Docs:
 
-* [intersphinx to link to other documentation and Jupyter Book projects](/sphinx-hoverxref)
-* [sphinx-examples to show examples and results side-by-side](/sphinx-hoverxref)
+* [intersphinx to link to other documentation and Jupyter Book projects](/intersphinx)
+* [sphinx-examples to show examples and results side-by-side](/sphinx-hoverxref) (TODO)
 * [sphinx-hoverxref to preview cross-references](/sphinx-hoverxref)
-* [sphinx-proof for logic and math, to write proofs, theorems, lemmas etc.](/sphinx-hoverxref)
-* [sphinx-inline-tabs to display alternatives side-by-side with a tabbed interface](/sphinx-hoverxref)
+* [sphinx-proof for logic and math, to write proofs, theorems, lemmas etc.](/sphinx-hoverxref) (TODO)
+* [sphinx-inline-tabs to display alternatives side-by-side with a tabbed interface](/sphinx-hoverxref) (TODO)
 
-## Jupyter Book examples
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation][jb-docs] for more information.
+## Table of Contents
 
-Check out the content pages bundled with this sample book to see more.
+Here is an automatically generated Tabel of Contents:
 
 ```{tableofcontents}
 ```
