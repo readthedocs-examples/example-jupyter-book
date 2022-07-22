@@ -34,7 +34,6 @@ We have also added some popular features for Jupyter Book that really you should
 * [sphinx-examples to show examples and results side-by-side](/sphinx-examples)
 * [sphinx-hoverxref to preview cross-references](/sphinx-hoverxref)
 * [sphinx-proof for logic and math, to write proofs, theorems, lemmas etc.](/sphinx-proof)
-* [sphinx-inline-tabs to display alternatives side-by-side with a tabbed interface](/sphinx-hoverxref) (TODO)
 
 
 ## Table of Contents
