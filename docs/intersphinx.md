@@ -1,4 +1,4 @@
-# Intersphinx
+# Intersphinx: Cross-reference other projects
 
 Behind the built-in Sphinx extension `intersphinx` is a powerful tool to reference sections in other Sphinx and Jupyter Book documentation projects.
 

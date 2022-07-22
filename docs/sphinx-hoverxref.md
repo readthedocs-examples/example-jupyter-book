@@ -1,4 +1,4 @@
-# sphinx-hoverxref - preview cross-references
+# sphinx-hoverxref: Preview tooltips for cross-references
 
 Using `sphinx-hoverxref`, we can preview cross-references in the documentation.
 
