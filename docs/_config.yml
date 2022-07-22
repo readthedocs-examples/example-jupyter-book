@@ -1,5 +1,6 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
+# Comprehensive example: https://github.com/executablebooks/jupyter-book/blob/master/docs/_config.yml
 
 title: Example Jupyter Book for Read the Docs
 author: Read the Docs team
@@ -30,3 +31,45 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
+sphinx:
+  config:
+    intersphinx_mapping:
+      ebp:
+        - "https://executablebooks.org/en/latest/"
+        - null
+      myst-parser:
+        - "https://myst-parser.readthedocs.io/en/latest/"
+        - null
+      myst-nb:
+        - "https://myst-nb.readthedocs.io/en/latest/"
+        - null
+      sphinx:
+        - "https://www.sphinx-doc.org/en/master"
+        - null
+      nbformat:
+        - "https://nbformat.readthedocs.io/en/latest"
+        - null
+      sd:
+        - "https://sphinx-design.readthedocs.io/en/latest"
+        - null
+      sphinxproof:
+        - "https://sphinx-proof.readthedocs.io/en/latest/"
+        - null
+    hoverxref_intersphinx:
+     - "sphinxproof"
+    mathjax3_config:
+      tex:
+        macros:
+          "N": "\\mathbb{N}"
+          "floor": ["\\lfloor#1\\rfloor", 1]
+          "bmat": ["\\left[\\begin{array}"]
+          "emat": ["\\end{array}\\right]"]
+        
+  extra_extensions:
+    - sphinx.ext.intersphinx
+    - sphinx_inline_tabs
+    - sphinx_proof
+    - sphinx_examples
+    - hoverxref.extension
+
