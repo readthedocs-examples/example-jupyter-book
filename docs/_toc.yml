@@ -8,5 +8,7 @@ chapters:
 - file: notebooks
 - file: markdown-notebooks
 - file: intersphinx
-- file: sphinx-hoverxref
 - file: sphinx-examples
+- file: sphinx-hoverxref
+- file: sphinx-proof
+

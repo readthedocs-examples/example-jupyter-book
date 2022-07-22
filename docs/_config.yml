@@ -51,11 +51,25 @@ sphinx:
         - "https://nbformat.readthedocs.io/en/latest"
         - null
       sd:
-        - https://sphinx-design.readthedocs.io/en/latest
+        - "https://sphinx-design.readthedocs.io/en/latest"
         - null
-
+      sphinxproof:
+        - "https://sphinx-proof.readthedocs.io/en/latest/"
+        - null
+    hoverxref_intersphinx:
+     - "sphinxproof"
+    mathjax3_config:
+      tex:
+        macros:
+          "N": "\\mathbb{N}"
+          "floor": ["\\lfloor#1\\rfloor", 1]
+          "bmat": ["\\left[\\begin{array}"]
+          "emat": ["\\end{array}\\right]"]
+        
   extra_extensions:
+    - sphinx.ext.intersphinx
     - sphinx_inline_tabs
     - sphinx_proof
     - sphinx_examples
     - hoverxref.extension
+
