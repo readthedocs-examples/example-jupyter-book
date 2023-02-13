@@ -45,7 +45,7 @@ You can build and view this documentation project locally - we recommend that yo
     jupyter-book build docs/
     
     # View the docs with for instance firefox
-    firefox docs/_build/index.html
+    firefox docs/_build/html/index.html
 
 
 Using the example in your own project
