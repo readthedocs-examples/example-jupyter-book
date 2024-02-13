@@ -57,8 +57,8 @@ If you are copying this code in order to get started with your documentation, yo
 
 #. use your existing project repository or create a new repository on GitHub, GitLab, Bitbucket or another host supported by Read the Docs
 #. copy ``.readthedocs.yaml`` and the ``docs/`` folder into your project.
-#. if you want to have a README on GitHub, create a ``README.rst`` which will be included in ``index.md``.
-#. if you *do not* want your README from GitHub included in the docs, edit `ìndex.md`` and remove the ``eval-rst`` block that includes it.
+#. if you want to have a README on GitHub, create a ``README.rst`` which will be included in ``intro.md``.
+#. if you *do not* want your README from GitHub included in the docs, edit ``intro.md`` and remove the ``eval-rst`` block that includes it.
 #. if you don't already have a ``.gitignore``, use the one from the project file -- otherwise add these lines::
 
     /docs/conf.py
